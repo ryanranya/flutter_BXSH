@@ -10,7 +10,7 @@ class MemberPage extends StatelessWidget {
           title: Text('会员中心'),
         ),
         body: Center(
-          child: Text("4567"),
+          child: Text("1233211234567"),
         ),
       ),
     );
