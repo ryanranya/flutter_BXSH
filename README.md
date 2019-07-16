@@ -11,6 +11,7 @@
 - [easyrefresh:刷新控件](https://pub.dev/packages/flutter_easyrefresh)
 - [provide:状态管理](https://pub.dev/packages/provide)
 - [fluttertoast:提示插件](https://pub.dev/packages/fluttertoast#-readme-tab-)
+- [fluro:路由跳转](https://pub.dev/packages/fluro#-installing-tab-)
 
 ## 截止目前已完成:
 
