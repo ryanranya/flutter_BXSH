@@ -10,6 +10,7 @@
 - [launcher:拨打电话/发送邮件](https://pub.dev/packages/url_launcher)
 - [easyrefresh:刷新控件](https://pub.dev/packages/flutter_easyrefresh)
 - [provide:状态管理](https://pub.dev/packages/provide)
+- [fluttertoast:提示插件](https://pub.dev/packages/fluttertoast#-readme-tab-)
 
 ## 截止目前已完成:
 
