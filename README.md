@@ -2,9 +2,7 @@
 
 使用Dart语言开发的跨平台App
 
-## 项目
-
-项目中使用了很多三方库:
+## 项目三方库
 
 - [dio:网络框架](https://pub.dev/packages/dio)
 - [swiper:无限轮播试图](https://pub.dev/packages/flutter_swiper)
