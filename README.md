@@ -9,6 +9,7 @@
 - [screenutil:屏幕适配](https://pub.dev/packages/flutter_screenutil)
 - [launcher:拨打电话/发送邮件](https://pub.dev/packages/url_launcher)
 - [easyrefresh:刷新控件](https://pub.dev/packages/flutter_easyrefresh)
+- [provide:状态管理](https://pub.dev/packages/provide)
 
 ## 截止目前已完成:
 
