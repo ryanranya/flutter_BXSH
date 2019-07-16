@@ -12,9 +12,9 @@ Future request(url, {formData}) async {
     dio.options.contentType =
         ContentType.parse('application/x-www-form-urlencoded');
 
-    if (formData == null){
+    if (formData == null) {
       response = await dio.post(servicePath[url]);
-    }else{
+    } else {
       response = await dio.post(servicePath[url], data: formData);
     }
 
@@ -26,5 +26,4 @@ Future request(url, {formData}) async {
   } catch (error) {
     return print('ERROR:=======================>${error}');
   }
-
 }

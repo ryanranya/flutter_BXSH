@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
+import 'package:baixingshenghuo_shop/routers/application.dart';
 
 //import 'package:dio/dio.dart';
 //import 'package:flutter_shop/config/httpHeaders.dart';
@@ -189,7 +190,6 @@ class _HomePageState extends State<HomePage>
   @override
   void initState() {
     super.initState();
-    print("1111122222222222222");
   }
 
   String homePageContent = '正在获取数据';
@@ -303,7 +303,11 @@ class _HomePageState extends State<HomePage>
     if (hotGoodsList.length != 0) {
       List<Widget> listWidget = hotGoodsList.map((value) {
         return InkWell(
-          onTap: () {},
+          onTap: () {
+            //路由跳转
+            Application.router
+                .navigateTo(context, '/detail?id=${value['goodsId']}');
+          },
           child: Container(
             width: ScreenUtil().setWidth(370),
             color: Colors.white,

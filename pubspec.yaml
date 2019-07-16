@@ -42,6 +42,12 @@ dependencies:
   #状态管理
   provide: ^1.0.2
 
+  #提示插件
+  fluttertoast: ^3.1.0
+
+  #路由组件
+  fluro: ^1.5.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
