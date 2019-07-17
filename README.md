@@ -13,6 +13,7 @@
 - [provider:谷歌最新的状态管理【正在使用】](https://pub.dev/packages/provider)
 - [fluttertoast:提示插件](https://pub.dev/packages/fluttertoast#-readme-tab-)
 - [fluro:路由跳转](https://pub.dev/packages/fluro#-installing-tab-)
+- [html:网页加载](https://pub.dev/packages/flutter_html#-installing-tab-)
 
 ## 截止目前已完成:
 
