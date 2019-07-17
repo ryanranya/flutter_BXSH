@@ -10,7 +10,7 @@
 - [launcher:拨打电话/发送邮件](https://pub.dev/packages/url_launcher)
 - [easyrefresh:刷新控件](https://pub.dev/packages/flutter_easyrefresh)
 - [provide:状态管理【假装删除线】](https://pub.dev/packages/provide)
-- [provider:谷歌最新的状态管理](https://pub.dev/packages/provider)
+- [provider:谷歌最新的状态管理【正在使用】](https://pub.dev/packages/provider)
 - [fluttertoast:提示插件](https://pub.dev/packages/fluttertoast#-readme-tab-)
 - [fluro:路由跳转](https://pub.dev/packages/fluro#-installing-tab-)
 
