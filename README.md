@@ -14,12 +14,21 @@
 - [fluttertoast:提示插件](https://pub.dev/packages/fluttertoast#-readme-tab-)
 - [fluro:路由跳转](https://pub.dev/packages/fluro#-installing-tab-)
 - [html:网页加载](https://pub.dev/packages/flutter_html#-installing-tab-)
+- [shared_preferences:数据持久化](https://pub.dev/packages/shared_preferences#-readme-tab-)
 
 ## 截止目前已完成:
 
 ✅ 首页界面搭建:
 
 ✅ 分类界面:
+
+✅ 数据持久化:
+
+✅ 路由跳转:
+
+✅ 网页加载:
+
+✅ 状态管理:
 
 ## 项目截图:
 
