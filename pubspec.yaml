@@ -51,6 +51,9 @@ dependencies:
   #html页面
   flutter_html: ^0.9.6
 
+  #数据持久化
+  shared_preferences: ^0.5.3+4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

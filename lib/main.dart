@@ -8,6 +8,7 @@ import 'package:fluro/fluro.dart';
 import 'package:baixingshenghuo_shop/routers/routers.dart';
 import 'package:baixingshenghuo_shop/routers/application.dart';
 import 'package:baixingshenghuo_shop/provide/details_info.dart';
+import 'package:baixingshenghuo_shop/provide/cart.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,6 +24,8 @@ class MyApp extends StatelessWidget {
     var catergoyGoodsListProvide = CategoryGoodsListProvide();
     //商品详情
     var detailsInfoProvide = DetailsInfoProvide();
+    //购物车
+    var cartProvide = CartProvider();
 
 //路由跳转
     final router = Router();
@@ -35,6 +38,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(builder: (_) => childCategory),
         ChangeNotifierProvider(builder: (_) => catergoyGoodsListProvide),
         ChangeNotifierProvider(builder: (_) => detailsInfoProvide),
+        ChangeNotifierProvider(builder: (_) => cartProvide),
       ],
       child: Container(
         child: MaterialApp(

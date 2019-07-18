@@ -6,168 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
 import 'package:baixingshenghuo_shop/routers/application.dart';
-
-//import 'package:dio/dio.dart';
-//import 'package:flutter_shop/config/httpHeaders.dart';
-
-//Dio网络请求示例
-//class HomePage extends StatefulWidget {
-//  @override
-//  _HomePageState createState() => _HomePageState();
-//}
-//
-//class _HomePageState extends State<HomePage> {
-//  //声明一个controller
-//  TextEditingController typeController = TextEditingController();
-//  String showText = '欢迎您来到凤凰阁';
-//  @override
-//  Widget build(BuildContext context) {
-//    return Container(
-//      child: Scaffold(
-//        appBar: AppBar(
-//          title: Text('小康小店'),
-//        ),
-//        //越界的话使用widget添加一个滑动的组件
-//        body: SingleChildScrollView(
-//          child: Container(
-//            child: Column(
-//              children: <Widget>[
-//                TextField(
-//                  controller: typeController,
-//                  decoration: InputDecoration(
-//                    contentPadding: EdgeInsets.all(10),
-//                    labelText: "需要小康的类型",
-//                    helperText: '请输入您需要小康的类型',
-//                  ),
-//                  //自动对焦要关闭，避免界面乱码
-//                  autofocus: false,
-//                ),
-//                RaisedButton(
-//                  onPressed: () {
-//                    _choiceAction();
-//                  },
-//                  child: Text('选择完毕'),
-//                ),
-//                Text(
-//                  showText,
-//                  //兼容性，需要加限制
-//                  overflow: TextOverflow.ellipsis,
-//                  maxLines: 1,
-//
-//                ),
-//              ],
-//            ),
-//          ),
-//        )
-//
-//      ),
-//    );
-//  }
-//
-//  //内部方法使用 _
-//
-//  void _choiceAction(){
-//    if (typeController.text.toString() == ''){
-//      showDialog(context: context,
-//      builder:(context) => AlertDialog(title: Text('小康类型不能为空'),),
-//      );
-//    }else{
-//      getHttp(typeController.text.toString()).then((value){
-//        setState(() {
-//          showText = value['data']['name'].toString();
-//        });
-//      });
-//    }
-//
-//  }
-//
-//
-////网络请求
-//  Future getHttp(String TypeText) async{
-//    try {
-//      Response response;
-//
-//      var parameters = {"name": TypeText};
-////      get请求
-////      response = await Dio().get("https://www.easy-mock.com/mock/5c60131a4bed3a6342711498/baixing/dabaojian",
-////        queryParameters: data
-////      );
-////      post 请求
-//      response = await Dio().post("https://www.easy-mock.com/mock/5c60131a4bed3a6342711498/baixing/post_dabaojian",
-//          queryParameters: parameters
-//
-//      );
-//
-//      return response.data;
-//
-//    }catch(error){
-//
-//      return print(error);
-//
-//    }
-//
-//  }
-//
-//}
-
-//伪造请求头
-//class HomePage extends StatefulWidget {
-//  @override
-//  _HomePageState createState() => _HomePageState();
-//}
-//
-//class _HomePageState extends State<HomePage> {
-//  String showText = "还没有请求数据";
-//
-//  @override
-//  Widget build(BuildContext context) {
-//    return Container(
-//      child: Scaffold(
-//        appBar: AppBar(
-//          title: Text('远程数据'),
-//        ),
-//        body: SingleChildScrollView(
-//          child: Column(
-//            children: <Widget>[
-//              RaisedButton(
-//                onPressed: () {
-//                  _jike();
-//                },
-//                child: Text("请求数据"),
-//              ),
-//              Text(showText),
-//            ],
-//          ),
-//        ),
-//      ),
-//    );
-//  }
-//
-//  //调用请求方法
-//  void _jike(){
-//    print('开始请求数据.......');
-//    getHttp().then((onValue){
-//      showText = onValue['data'].toString();
-//
-//    });
-//
-//  }
-//
-//  //网络请求
-//  Future getHttp() async {
-//    try {
-//      Response response;
-//      Dio dio = Dio();
-//      dio.options.headers = httpHeaders;
-//      response =
-//          await dio.get("https://time.geekbang.org/serv/v1/column/topList");
-//      print(response);
-//      return response.data;
-//    } catch (error) {
-//      print(error);
-//    }
-//  }
-//}
+import 'package:fluro/fluro.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -305,9 +144,9 @@ class _HomePageState extends State<HomePage>
         return InkWell(
           onTap: () {
             //路由跳转
-            Application.router
-                .navigateTo(context, '/detail?id=${value['goodsId']}');
-          },
+        Application.router
+            .navigateTo(context, '/detail?id=${value['goodsId']}',transition: TransitionType.native);
+      },
           child: Container(
             width: ScreenUtil().setWidth(370),
             color: Colors.white,
@@ -387,7 +226,8 @@ class SwiperDiy extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return InkWell(
             onTap: (){
-              Application.router.navigateTo(context, '/detail?id=${swperDateList[index]['goodsId']}');
+
+              Application.router.navigateTo(context, '/detail?id=${swperDateList[index]['goodsId']}',transition: TransitionType.native);
             },
             child: Image.network(
                 "${swperDateList[index]['image']}",
@@ -535,7 +375,7 @@ class Recommend extends StatelessWidget {
     return InkWell(
         onTap: () {
 
-          Application.router.navigateTo(context, '/detail?id=${recommendList[index]['goodsId']}');
+          Application.router.navigateTo(context, '/detail?id=${recommendList[index]['goodsId']}',transition: TransitionType.native);
 
         },
         child: Container(
@@ -656,7 +496,7 @@ class FloorContent extends StatelessWidget {
       width: ScreenUtil().setWidth(375),
       child: InkWell(
         onTap: () {
-          Application.router.navigateTo(context, '/detail?id=${goods['goodsId']}');
+          Application.router.navigateTo(context, '/detail?id=${goods['goodsId']}',transition: TransitionType.native);
         },
         child: Image.network(goods['image']),
       ),
