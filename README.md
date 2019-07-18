@@ -30,6 +30,8 @@
 
 ✅ 状态管理:
 
+✅ 购物车界面搭建:
+
 ## 项目截图:
 
 ![首页图片1](https://github.com/ryanranya/flutter_BXSH/blob/master/png/8215A912-1296-4134-BB61-09B40D6AC108.png)
