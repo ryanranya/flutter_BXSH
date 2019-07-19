@@ -10,7 +10,7 @@ import 'package:baixingshenghuo_shop/service/service_method.dart';
 import 'dart:convert';
 
 class DetailsInfoProvide with ChangeNotifier {
-  DetailsModel goodsInfo = null;
+  DetailsModel goodsInfo;
   bool isLeft = true;
   bool isRight = false;
 
@@ -23,6 +23,7 @@ class DetailsInfoProvide with ChangeNotifier {
       isLeft = false;
       isRight = true;
     }
+
 
     notifyListeners();
   }

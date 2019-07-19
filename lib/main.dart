@@ -9,6 +9,7 @@ import 'package:baixingshenghuo_shop/routers/routers.dart';
 import 'package:baixingshenghuo_shop/routers/application.dart';
 import 'package:baixingshenghuo_shop/provide/details_info.dart';
 import 'package:baixingshenghuo_shop/provide/cart.dart';
+import 'package:baixingshenghuo_shop/provide/currentIndex.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
     var detailsInfoProvide = DetailsInfoProvide();
     //购物车
     var cartProvide = CartProvider();
+    var currentIndexProvide = CurrentIndexProvide();
 
 //路由跳转
     final router = Router();
@@ -39,6 +41,9 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(builder: (_) => catergoyGoodsListProvide),
         ChangeNotifierProvider(builder: (_) => detailsInfoProvide),
         ChangeNotifierProvider(builder: (_) => cartProvide),
+        ChangeNotifierProvider(builder: (_) => currentIndexProvide),
+
+
       ],
       child: Container(
         child: MaterialApp(
