@@ -64,6 +64,7 @@
 
 - [pub.dev](https://pub.dev/flutter/packages?q=)
 - [Flutter社区](https://juejin.im/tag/Flutter?utm_source=flutterchina&utm_medium=word&utm_content=btn&utm_campaign=q3_website)
+- [Jspang,](https://jspang.com/posts/2019/03/01/flutter-shop.html)
 
 <!--For help getting started with Flutter, view our 
 #[online documentation](https://flutter.dev/docs), which offers tutorials, 
