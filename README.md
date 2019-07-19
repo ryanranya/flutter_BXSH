@@ -32,6 +32,10 @@
 
 ✅ 购物车界面搭建:
 
+✅ 购物车单选，多选完成:
+
+✅ 购物车页面完场:
+
 ## 项目截图:
 
 ![首页图片1](https://github.com/ryanranya/flutter_BXSH/blob/master/png/8215A912-1296-4134-BB61-09B40D6AC108.png)
@@ -39,6 +43,9 @@
 ![分类首页](https://github.com/ryanranya/flutter_BXSH/blob/master/png/4C017F8B-FEAF-4B41-BFD8-0EB3D758EF3A.png)
 
 ## 项目更新进度:
+【2019-7-18】/完善购物车页面，全选，反选，价格计算等
+
+【2019-7-17】/完善首页商品详情内部，以及学习了provider状态管理
 
 【2019-7-16】/分类界面完成，路由跳转集成(routers)文件创建
 
