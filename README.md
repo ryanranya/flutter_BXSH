@@ -43,8 +43,11 @@
 ![分类首页](https://github.com/ryanranya/flutter_BXSH/blob/master/png/4C017F8B-FEAF-4B41-BFD8-0EB3D758EF3A.png)
 ![购物车页面1](https://github.com/ryanranya/flutter_BXSH/blob/master/png/786C5988-889D-416A-ACFA-53CB6C5C1C32.png)
 ![购物车页面2](https://github.com/ryanranya/flutter_BXSH/blob/master/png/C2BEB62E-A601-4CB3-8A00-E94ABE2C9195.png)
+![会员中心]()
 
 ## 项目更新进度:
+【2019-7-19】/大体做完了，基本上把基础知识弄了一遍适合新手，练手
+
 【2019-7-18】/完善购物车页面，全选，反选，价格计算等
 
 【2019-7-17】/完善首页商品详情内部，以及学习了provider状态管理
