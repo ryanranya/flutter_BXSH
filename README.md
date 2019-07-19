@@ -41,6 +41,8 @@
 ![首页图片1](https://github.com/ryanranya/flutter_BXSH/blob/master/png/8215A912-1296-4134-BB61-09B40D6AC108.png)
 ![首页图片2](https://github.com/ryanranya/flutter_BXSH/blob/master/png/E0A7E7ED-CCED-4D8C-B961-D8FC2B2EBCCA.png)
 ![分类首页](https://github.com/ryanranya/flutter_BXSH/blob/master/png/4C017F8B-FEAF-4B41-BFD8-0EB3D758EF3A.png)
+![购物车页面1](https://github.com/ryanranya/flutter_BXSH/blob/master/png/786C5988-889D-416A-ACFA-53CB6C5C1C32.png)
+![购物车页面2]()
 
 ## 项目更新进度:
 【2019-7-18】/完善购物车页面，全选，反选，价格计算等
